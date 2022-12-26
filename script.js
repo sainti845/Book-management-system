@@ -16,12 +16,15 @@ const editEntry = document.querySelector(".edit");
 const deleteEntry = document.querySelector(".delete");
 
 console.log(screen.width);
-
-
-window.addEventListener("resize",function(){
-    if(screen.width<500)
+if (screen.width < 500)
     document.querySelector('.logo_image').setAttribute("style", "max-width:50vw;");
-    });
+
+window.addEventListener("resize", function () {
+    if (screen.width < 500)
+        document.querySelector('.logo_image').setAttribute("style", "max-width:50vw;");
+    else
+        document.querySelector('.logo_image').setAttribute("style", "max-width:20vw;");
+});
 
 let data = localStorage.getItem("data") ? JSON.parse(localStorage.getItem("data")) : [];
 let isEdit = false;
@@ -34,12 +37,12 @@ confirmLogin.addEventListener('click', function (e) {
     leftui.classList.add("hidden");
     if (screen.width < 500) {
         document.querySelector('.carousel').setAttribute("style", "width:80% !important;");
-     
-studentDatabase.setAttribute("style", "width:90% !important;");
+
+        studentDatabase.setAttribute("style", "width:90% !important;");
     }
     else {
         document.querySelector('.carousel').setAttribute("style", "width:50% !important;");
-    } 
+    }
     userName.innerText = document.querySelector('#input_user').value;
 });
 
