@@ -1,0 +1,116 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.logo_image {
+  max-width: 20vw;
+  max-height: 150px;
+  /* margin-left: 3vw; */
+}
+
+
+section.login {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+}
+
+
+.leftui {
+  flex: 30%;
+  display: flex;
+  align-items: center;
+  /* align-content: center; */
+  padding: 5% 6%;
+  margin: 2%;
+
+}
+
+.rightui {
+  flex: 40%;
+  background-color: blue;
+
+}
+
+img {
+  border-radius: 8px;
+  height: 600px !important;
+}
+
+.formpack {
+  height: 100%;
+  overflow: auto;
+  width: 83%;
+  border-radius: 8px;
+  padding: 14% 10%;
+  margin: 0 auto;
+  box-shadow: -1px 1px 10px 6px #85808082;
+}
+
+label {
+  color: rgb(83, 81, 81);
+}
+
+input {
+  border-radius: 5px;
+  margin: 3% 0;
+}
+
+placeholder {
+  color: rgb(163, 159, 159);
+}
+
+.carousel {
+  box-shadow: -2px -2px 21px #5b5b5b !important;
+
+}
+
+
+.welcome {
+  height: 25vh;
+  padding: 1% 0% 0px 2%;
+  background-color: rgb(195, 199, 198);
+}
+
+.student_database {
+  box-shadow: 1px 1px 6px 4px #d8d1d1;
+  border-radius: 8px;
+  overflow: auto;
+}
+
+.detail_confirm {
+  margin-left: 5%;
+}
+
+.collection {
+  background-image: url('images/background-image.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.demo {
+  opacity: .7 !important;
+}
+
+
+.card {
+  margin: 3% 0 0 0;
+  height: 100vh !important;
+  width: 20vw !important;
+  min-width: 280px;
+  border-radius: 2%;
+  box-shadow: 0px 0px 12px #443434;
+  max-height: 500px;
+}
+
+.hidden {
+  display: none !important;
+}
